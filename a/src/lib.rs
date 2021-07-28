@@ -1,9 +1,9 @@
-pub fn mk_non_generic() -> b::NonGeneric {
-    b::NonGeneric
+pub fn mk_struct() -> b::SomeStruct {
+    b::SomeStruct
 }
 
 #[test]
 fn wer() {
     // OK
-    assert_eq!(self::mk_non_generic(), b::NonGeneric);
+    assert_eq!(self::mk_struct(), b::SomeStruct);
 }

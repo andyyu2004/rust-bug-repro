@@ -1,5 +1,5 @@
 #[derive(PartialEq, Eq, Debug)]
-pub struct NonGeneric;
+pub struct SomeStruct;
 
 #[cfg(test)]
 mod tests {
@@ -7,6 +7,6 @@ mod tests {
     fn it_works() {
         // not ok?
         // expected struct `b::NonGeneric`, found struct `NonGeneric`
-        a::mk_non_generic() == super::NonGeneric;
+        a::mk_struct() == super::SomeStruct;
     }
 }
