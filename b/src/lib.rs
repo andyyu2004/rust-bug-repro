@@ -6,7 +6,7 @@ mod tests {
     #[test]
     fn it_works() {
         // not ok?
-        // expected struct `b::NonGeneric`, found struct `NonGeneric`
+        // expected struct `b::SomeStruct`, found struct `SomeStruct`
         a::mk_struct() == super::SomeStruct;
     }
 }
